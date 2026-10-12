@@ -1,0 +1,8 @@
+IO_LOC "clk" 52;
+IO_PORT "clk" IO_TYPE=LVCMOS33 PULL_MODE=NONE;
+// Pin 25 is a 3.3V GPIO. Supply a translated digital BMC signal only.
+IO_LOC "cc_bmc" 25;
+IO_PORT "cc_bmc" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+// On-board BL702 USB-UART RX, FPGA TX. Confirm board revision.
+IO_LOC "uart_tx" 17;
+IO_PORT "uart_tx" IO_TYPE=LVCMOS33 PULL_MODE=NONE DRIVE=4;

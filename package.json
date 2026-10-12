@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "scripts": {
+    "test": "python3 sim/test.py && node sim/protocol.test.mjs",
+    "serve": "python3 -m http.server 8000 --bind 127.0.0.1 --directory web/dist"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
